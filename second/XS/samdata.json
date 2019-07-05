@@ -1,0 +1,91 @@
+{   
+    "popup": {
+        "header": "Congratulations!",
+        "first" : "You were selected because we need more testers for the new Samsung Galaxy S9!",
+        "second" : "Press OK to participate and receive a free Samsung Galaxy S9!",
+        "btn" : "OK"
+    },
+    "date" : {
+		"month" : ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+		"weekday" : ["Domenica ","Lunedi","Martedì","Mercoledì","Giovedi","Venerdì","Sabato"]
+    },
+    "frontpage" :{
+        "title" : "Rewards Center",
+        "header" : "CONGRATULATIONS!",
+        "subheader" : "You have been randomly selected to test the new Galaxy S9!",
+        "textOne" : "This is not a joke. You are invited to test the brand new Galaxy S9 before it is released. Right now we are looking for 20 product testers to review the Galaxy S9. Beta testing and feedback is very important for us in order to make the new Galaxy S version even better than the previous ones.",
+        "textTwo" : "If you are interested in joining the Samsung Product Testing Panel, please answer the following 4 questions. <span>To thank you for your effort, we will reward you with the [PHONE] completely free of charge!</span> "
+    },
+    "questions" : [
+		{	"head" : "Question  1 of 4:",
+			"quest" : "Are you currently the owner of one or more Samsung products?",
+			"answer" : ["Yes", "No"]
+        },
+        {	"head" : "Question  2 of 4:",
+			"quest" : "Which new feature would be most important to you?",
+			"answer" : ["Wireless Charging", "WQHD Display"]
+        },
+        {	"head" : "Question  3 of 4:",
+			"quest" : "Which of the following messaging features do you prefer?",
+			"answer" : ["SMS", "Facebook Messenger"]
+        },
+        {	"head" : "Question  4 of 4:",
+			"quest" : "Are you willing to pay 1€ for shipping and handling to receive an Galaxy S9?",
+			"answer" : ["Yes", "No"]
+        }],
+    "loading" : {
+        "header" : "We are checking your answers",
+        "chekeriai" : ["No double registrations found.", "We have (3) spots left", "You qualify for (1) Samsung Galaxy S9"]
+    },
+    "offer" :{
+        "header" : "Congratulations! You qualify for the private test group!",
+        "subheaderone" : "We will contact you shortly with more details.",
+        "subheadertwo" : "Click below to claim your bonus Galaxy S9. This is to say thanks for your participation.",
+        "claimheader" : "CLAIM YOUR GIFT BELOW",
+        "buttontext" : "CLAIM NOW",
+        "link" : "https://duktrk.com/index.php?lp=1",
+        "subbtntext" : "Enter your correct shipping details on the next page to receive your bonus Galaxy S9. Supplies are limited, so act fast!"
+    }, 
+    "comments": {
+        "commentstag" : ["Comments", "6 Comments"],
+        "comments": [{
+            "profpic" : "img/pic1.png",
+            "name" : "Amelie Aikton",
+            "comm" : "Mine just came in the mail today. Thank you Apple for the Galaxy S9!",
+            
+            "compic" : "img/item1.jpg",
+            "subcomentline" : "Reply - Like - 27 Likes - "
+        },
+        {
+            "profpic" : "img/pic2.png",
+            "name" : "Jamie Stevenson",
+            "comm" : "I Wasn't sure if this was legit or not, but I received my phone today",
+        
+            "subcomentline" : "Reply - Like - 10 Likes - "
+        },
+        {
+            "profpic" : "img/pic3.png",
+            "name" : "Kim Lee",
+            "comm" : "Though this was a joke at first, but the gift came in the mail this morning. I want to do more surveys! lol",
+        
+            "subcomentline" : "Reply - Like - 45 Likes - "
+        },
+        {
+            "profpic" : "img/pic4.png",
+            "name" : "Axel Schmidt",
+            "comm" : "Sweeeet! Galaxy S9 for free, holy shit! WINNER WINNER!",
+        
+            "subcomentline" : "Reply - Like - 28 Likes - "
+        },
+        {
+            "profpic" : "img/pic5.png",
+            "name" : "Andrea F.",
+            "comm" : "I actually saw this survey one other time and I ignored it cause I thought it was bullshit. I saw this ad again and decided to try it since I was bored... I actually got an Galaxy S9. CRAZY!",
+            "compic" : "img/item2.jpg",
+            "subcomentline" : "Reply - Like - 30 Likes - "
+        }
+    ]
+    }
+    
+
+}
