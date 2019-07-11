@@ -18,7 +18,7 @@
    
 
 let responseBase = '<?php echo $response; ?>';
-    console.log("Appending body for Base");
+    console.log("Appending body for BaseNew");
     var responseFinalBase = JSON.parse(responseBase);
     console.log(responseFinalBase);
 
@@ -48,7 +48,6 @@ if (responseFinalBase.offerwallItems[0].offer.secondLander === null ) {
    for (let z =0 ; z < responseFinalBase.offerwallItems.length; z++) {
       let q = z+1
       referalLink.push(responseFinalBase.offerwallItems[z].offer.offerUrl.url + q)
-
    }
 }  else
 {
@@ -94,17 +93,17 @@ determineFurtherLanders()
                       <div class="left_item_product">
                          <div class="price_no price_desctop">
                             <span class="np">${responseFinalBase.landerText.offerPriceText}
-                            <span>${responseFinalBase.locale.currencyTag}${
+                            <span>${responseFinalBase.locale.currencyTag} ${
                       responseFinalBase.offerwallItems[i].offer.price
                     }</span>
                             </span>
                             <span class="tp">
                             <b>${responseFinalBase.landerText.offerTodayPriceText}</b>
-                            <b class="blink">${responseFinalBase.locale.currencyTag}0.00!</b>
+                            <b class="blink">${responseFinalBase.locale.currencyTag} 0.00!</b>
                             </span>
                             <span class="sp">${
                               responseFinalBase.landerText.orderShippingText
-                            }: <b>${responseFinalBase.locale.currencyTag}${
+                            } <b>${responseFinalBase.locale.currencyTag} ${
                       responseFinalBase.offerwallItems[i].offer.shippingPrice
                     }</b></span>
                             <span class="remaining">${
@@ -231,25 +230,27 @@ determineFurtherLanders()
                       </div>
              <div class="header_wrapp">
                 <div class="text_title">
-                   <h1><img src=${responseFinalBase.brand.logo} style="max-width: 200px;"></h1>
+                   <h1><img src=${responseFinalBase.brand.logo} style="max-width: 200px; max-height: 120px"></h1>
 
                    </div>
                 </div>
              </div>
           </div>
-             <p style="
 
-             text-align: center;
-    margin-right: 20px;
-    font-size: 20px;
-    font-weight: 800;
+       </div>
+    
+       <!--CENTER CONTAINER-->
+       <p style="
+
+text-align: center;
+margin-right: 20px;
+font-size: 20px;
+font-weight: 800;
+margin-top: 10px;
 
 
 " class="country-name"><span class="flag mx-auto"> 
 <img src=${responseFinalBase.locale.flag} alt="flag" style="margin-left: 7px"></span><p>
-       </div>
-    
-       <!--CENTER CONTAINER-->
        <div class="content_center">
           <div class="container_center ">
     
@@ -374,7 +375,7 @@ determineFurtherLanders()
 
 			<p class="fontsize-10" style = "
     margin: 20px 30px 20px 30px;
-">This website is not affiliated with or endorsed by Amcal and does not claim to represent, or own any of the trademarks,
+">This website is not affiliated with or endorsed by [BRAND] and does not claim to represent, or own any of the trademarks,
 				tradenames or rights associated with any of the products which are the property of their respective owners who do not own, 
 				endorse, or promote this site. All images on this site are readily available in various places on the Internet and believed 
 				to be in public domain according to the U.S. Copyright Fair Use Act (title 17, U.S. Code). *Trial offers offered on the last page require shipping and handling fees. 

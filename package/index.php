@@ -24,9 +24,14 @@
     ></script>
   </head>
   <body>
+
+
     <script>
+
+
+
       function startCheck() {
-        $(".introText").hide(),
+        $(".introText").hide()
           $(".checker, .check1").show(),
           setTimeout(function() {
             $("#progress").css("width", "30%"),
@@ -97,12 +102,22 @@
 
     var packageTemplate = JSON.parse(response);
 
+    $('body').css('background', packageTemplate.brand.backgroundColor)
+    
     var bla = packageTemplate.brand.name
 var alb = bla.replace(/ /g,"_")
 $('head').append(`<title>${packageTemplate.brand.name}</title>`)
 $('head').append(`<link rel="icon" href="https://firstpushbucket.s3.eu-west-3.amazonaws.com/Amazon+Master+Lander/ICO/${alb}.ico">`)
 
+
+
+function closePrelander() {
+  $('.prelander').remove()
+}
+
+
       let packageTemplateMarkup = `
+
         <div id="questionWrapper">
 <div style="position: relative;">
 <div id="header" style="padding: 10px; margin: 0 auto;">
@@ -172,11 +187,25 @@ $('head').append(`<link rel="icon" href="https://firstpushbucket.s3.eu-west-3.am
 <p><span class="message">&nbsp;</span></p>
 </div>
 </div>
-<div id="system_overlay">
+<div id="system_overlay" style="background: ${packageTemplate.brand.backgroundColor} !important">
+<div class="mx-5 mt-5 prelander" style="display:block;width: 100%;height: 100%;padding-top: 10%;padding-left: 5%;padding-right: 5%; background-color: ${packageTemplate.brand.backgroundColor}"
+;">
+    <div class="citazione mx-5 my-auto p-3">
+      <div>
+        <!-- <div id='error'></div> -->
+      <img src="${packageTemplate.brand.logo}" style="width:80%; max-width:200px;height=25%"  class="poste"></div> <span>${packageTemplate.landerText.offerOptionText}<font color="#287799"> <strong>${packageTemplate.brand.name}.</strong> </font>${packageTemplate.landerText.OfferArriveText}</span>
+   </div>
+   <a class="answer system animated infinite pulse mx-auto mt-5 mygtuk" style="
+    margin-top: 40px;
+    background-color:${packageTemplate.brand.buttonColor};
+    color:${packageTemplate.brand.hoverButtonColor}"
+ onclick = "closePrelander()" >${packageTemplate.landerText.thankYouText}</a>
+</div>
+
 <table style="padding: 10px; border: none; width: 100%; height: 100%;">
 <tbody><tr>
 <td style="vertical-align: middle; width: 100%; height: 100%;">
-<div id="system_modal" style="">
+<div id="system_modal" style="background: ${packageTemplate.brand.backgroundColor} !important">
 <div id="system_top" style="padding: 10px;">
 <img class="imgClass" src=${
         packageTemplate.brand.logo
@@ -244,6 +273,14 @@ $('head').append(`<link rel="icon" href="https://firstpushbucket.s3.eu-west-3.am
 
 
 
+
+        function determinePreLander() {
+  if (packageTemplate.offerwallItems[0].offer.offerText === "PRELANDER") {
+      $('.prelander').show()
+  }
+}
+
+determinePreLander()
         
 
       $("body").append(packageTemplateMarkupWoBrandnPhone);
